@@ -31,23 +31,27 @@ body {
 }
 
 header {
-    background-color: rgba(0, 10, 12, 0.793);
+    background-color: rgb(0, 0, 0);
     display: flex;
     padding: none;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     height: 9rem;
-
-
     width: 100%;
 }
+
+a.nav-link {
+    color: rgb(255, 255, 255);
+}
+
 .navbar{
     display: flex;
     align-self: center;
-    background-color: rgba(0, 0, 0, 0.429);
-    border-radius: 5px;
-    color: aliceblue;
+    background-color: rgb(83, 83, 83);
+    border-radius: 30px;
+    margin-right: 2rem;
+
 }
 
 .logo{
@@ -65,27 +69,40 @@ header {
     gap: 1rem;
 
 }
-.nav-link {
 
-    text-decoration: none;
-    color: rgb(235, 235, 241);
-}
+
 /************************************************************index**********************************************************/
 .contactotex{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 4rem;
     padding-top: 5rem;
 
    
 }
-.formu{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 4rem;
+.formulario{
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 2rem;
+    
+    margin-left: 2rem;
 }
+.mapa {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+@media (max-width: 600px) {
+    .formulario { grid-template-columns: repeat(1, 1fr); 
+ }
+   }
+
+
+    
+
 
 .hero {
     
@@ -102,7 +119,7 @@ header {
 }
 
 .productos {
-    background-image: url(../imagenes/repuestos.jpg);
+    background-image: url(../imagenes/repuestos-autos.jpg);
     background-repeat: no-repeat;
     margin: 0; 
     padding: 0; 
@@ -116,10 +133,15 @@ header {
 
 .hero-contenedor {
     width: 60%;
-    background-color: rgba(14, 1, 1, 0.232);
+    background-color: rgba(14, 1, 1, 0.44);
     
-    border-radius: none;
+    border-radius: 8px;
     margin-top: 9rem;   
+    color: white;
+    padding: 10px 10px 10px;
+
+
+    
 }
 .somos{
     padding: 8rem;
@@ -153,7 +175,8 @@ header {
     row-gap: 30px;
 }
     @media (max-width: 600px) {
-       .servicios { grid-template-columns: repeat(1, 1fr); }
+       .servicios{ grid-template-columns: repeat(1, 1fr); 
+    }
       }
     
       
@@ -195,6 +218,16 @@ header {
     margin: 12px;
     text-decoration: none;
 }
+/************* productos***************/
+.repuestos {
+    padding-top: 7rem;
+    margin: 4rem;
+    color: black;
+}
+.rep-title {
+    display: flex;
+    justify-content: center;
+}
 
 /****************Footer***********************/
 
@@ -206,7 +239,26 @@ header {
     padding: 2rem;
     color: aliceblue;
     
-   
-    
-    
 }
+.footer {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.footer p {
+    margin: 0;
+}
+.telefono {
+    width: 50px;
+    height: auto; 
+   
+}
+
+  @media (max-width: 768px) {
+    .footer {
+      grid-template-columns: 1fr;
+    }
+  }
+  
