@@ -1,0 +1,28 @@
+.footer {
+    margin-top: auto;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    text-align: center;
+    padding: 2rem;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    align-items: center; 
+    gap: 10px; 
+
+    .telefono {
+        width: 50px;
+        height: auto; 
+       
+    }
+
+
+
+
+
+
+
+
+
+
+}

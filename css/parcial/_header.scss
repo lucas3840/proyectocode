@@ -1,0 +1,29 @@
+header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: none;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 9rem;
+    width: 100%;
+
+        .logo{
+            height: 9rem;
+            width: 15rem;
+            padding: 0px;
+            margin: none;
+            border:none;
+            }
+    
+        .navbar{
+            display: flex;
+            align-self: center;
+            background-color: rgb(83, 83, 83);
+            border-radius: 30px;
+            margin-right: 2rem;
+        
+        }
+
+
+}

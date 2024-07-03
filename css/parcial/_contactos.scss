@@ -1,0 +1,25 @@
+.contactotex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+    padding-top: 5rem;
+
+   
+}
+.formulario{
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+
+    .mapa {
+        display: flex;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+}
