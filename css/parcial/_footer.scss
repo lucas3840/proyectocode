@@ -1,10 +1,10 @@
 .footer {
     margin-top: auto;
-    background-color: rgb(0, 0, 0);
+    background-color: $color-principal;
     display: flex;
     text-align: center;
     padding: 2rem;
-    color: aliceblue;
+    color: $color-secundario;
     display: grid;
     grid-template-columns: 1fr auto; 
     align-items: center; 

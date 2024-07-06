@@ -8,6 +8,12 @@
     font-family: "Roboto", sans-serif;
 
 }
+:root {
+    --color-principal: white;
+    --color-secundario: rgb(83, 83, 83);
+    --color-heder:black;
+    --color-test: red;
+}
 html {
     height: 100%;
 }
@@ -15,10 +21,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    background-color: aliceblue;
+   
 }
 .fondo-inicio{
-    background-color: rgb(201, 201, 201);
+    background-color: var(--color-principal);
     
 }
 
