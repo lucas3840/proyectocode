@@ -1,28 +1,28 @@
+// mixin fuera de las reglas de estilo
+@mixin mobile {
+    @media screen and (max-width: 600px) {
+        @content;
+        font-size: 14px;
+    }
+}
+
+// mixin .footer
 .footer {
     margin-top: auto;
     background-color: $color-principal;
-    display: flex;
     text-align: center;
     padding: 2rem;
     color: $color-secundario;
     display: grid;
-    grid-template-columns: 1fr auto; 
-    align-items: center; 
-    gap: 10px; 
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 10px;
 
-    .telefono {
-        width: 50px;
-        height: auto; 
-       
-    }
+    @include mobile;
+  
+}
 
-
-
-
-
-
-
-
-
-
+.telefono {
+    width: 50px;
+    height: auto;
 }

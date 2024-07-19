@@ -1,18 +1,17 @@
-@media (max-width: 600px) {
-    .formulario { 
-      grid-template-columns: repeat(1, 1fr); 
-    } 
+@mixin mobile {
+  @media screen and (max-width: 600px) {
+      @content;
+      grid-template-columns: repeat(1, 1fr); // Una sola columna en móviles
   }
+}
+
+
   
-  @media (max-width: 600px) {
-    .servicios { 
-      grid-template-columns: repeat(1, 1fr); 
-    } 
-  }
-  
-  @media (max-width: 768px) {
-    .footer { 
-      grid-template-columns: 1fr; 
-    }
-  }
-  
+  @mixin tablet {
+    @media screen and (max-width: 768px) {
+      @content;
+       
+      grid-template-columns: repeat(1, 1fr);
+    }  
+   }
+   

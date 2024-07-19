@@ -1,13 +1,34 @@
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+      @content;
+       
+      grid-template-columns: repeat(1, 1fr);
+    }  
+   }
+   @mixin mobile {
+    @media screen and (max-width: 600px) {
+        @content;
+        grid-template-columns: repeat(1, 1fr); // Una sola columna en móviles
+    }
+  }
+
 .contactotex{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 4rem;
     padding-top: 5rem;
+    
 
    
 }
 .formulario{
+    @include tablet;
+    grid-template-columns: 1fr; // Una sola columna en móviles
+    margin-left: 0; 
+    @include mobile;
+    grid-template-columns: 1fr; // Una sola columna en móviles
+    margin-left: 0; 
     display: grid;
     grid-template-columns: .5fr .5fr;
     grid-template-rows: 1fr;
@@ -16,7 +37,9 @@
 
     .mapa {
         display: flex;
-        margin-left: 2rem;
+        
+        margin-left: 1rem;
+        margin-right: 2rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
